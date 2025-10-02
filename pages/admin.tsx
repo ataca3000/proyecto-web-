@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 
 export default function Admin() {
-  const [title, setTitle] = useState("Lumi⭐Nova");
+  const [title, setTitle] = useState("Luminova");
   const [description, setDescription] = useState("Plataforma moderna para mostrar tu negocio");
 
   return (
