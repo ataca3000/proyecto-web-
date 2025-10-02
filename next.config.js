@@ -1,21 +1,14 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  reactStrictMode: true,
-  swcMinify: true,
-  async redirects() {
-    return [
+  images: {
+    remotePatterns: [
       {
-        source: '/www/:path*',
-        destination: '/',
-        permanent: true,
+        protocol: "https",
+        hostname: "cdn.sanity.io",
+        port: "",
       },
-      {
-        source: '/index.html',
-        destination: '/',
-        permanent: true,
-      }
-    ]
-  }
-}
+    ],
+  },
+};
 
-module.exports = nextConfig
+module.exports = nextConfig;
